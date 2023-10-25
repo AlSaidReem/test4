@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AJAX </title>
+    <style>
+        #get{
+            font-size: larger;
+            font-weight: bold;
+        }
+        #input{
+            height: 30px;
+            width: 250px;
+        }
+        #btn{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1> AJAX Request with JavaScript</h1>
+    <input type="text" id="input" oninput="writeValue()">
+    <button id="btn"> Send comment </button>
+    <p> Get comment: <span id="one"></span></p>
+   
+    <script>
+        function writeValue(){
+            var inpUt =document.getElementById("input").value;
+            var result = document.getElementById("one");
+            result.innerText = inpUt;
+        }
+    
+    </script>
+</body>
+</html>
